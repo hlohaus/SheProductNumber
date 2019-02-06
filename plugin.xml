@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label>Allow all characters in product numbers</label>
+    <label lang="de">Erlaube alle Zeichen in Artikelnummern</label>
+    <version>1.0.0</version>
+    <copyright>S.HE Business GmbH</copyright>
+    <license>MIT</license>
+    <link>https://she-business.com/</link>
+    <author>S.HE Business GmbH</author>
+    <compatibility minVersion="5.3.0" />
+    <changelog version="1.0.0">
+        <changes>
+            <![CDATA[
+                <div>Initial release</div>
+            ]]>
+        </changes>
+        <changes lang="de">
+            <![CDATA[
+                <div>Erstveröffentlichung</div>
+            ]]>
+        </changes>
+    </changelog>
+    <description>
+        <![CDATA[
+- Configure the product number validation via the backend. By default, all characters are allowed.
+]]>
+    </description>
+    <description lang="de">
+        <![CDATA[
+- Konfiguriere über das Backend die Artikelnummer-Validierung. Im Standard sind alle Zeichen erlaubt.
+]]>
+    </description>
+</plugin>

@@ -5,8 +5,8 @@
         <element type="text">
             <name>regex</name>
             <label>Regex for product number</label>
-            <label lang="de">Artikelnumer-RegEx</label>
-            <value>/^[a-zA-Z0-9-_.]+$/</value>
+            <label lang="de">RegEx für Artikelnummern</label>
+            <value>/^.+$/</value>
         </element>
     </elements>
 </config>
