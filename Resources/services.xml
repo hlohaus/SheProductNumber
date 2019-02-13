@@ -12,5 +12,9 @@
             <argument type="service" id="she_product_number.annotations_reader.inner" />
             <argument type="service" id="config" />
         </service>
+
+        <service id="she_product_number.validator" class="\SheProductNumber\Components\Validator">
+            <argument type="service" id="config" />
+        </service>
     </services>
 </container>
