@@ -31,6 +31,7 @@ class SheProductNumber extends Plugin
 
         if ($request->getActionName() == 'load') {
             $view->extendsTemplate('backend/article/view/detail/she_product_number.js');
+            $view->extendsTemplate('backend/article/view/variant/she_list.js');
         }
     }
 }
