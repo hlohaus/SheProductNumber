@@ -4,6 +4,7 @@ namespace SheProductNumber\Components;
 
 use Doctrine\Common\Annotations\Reader;
 use Shopware\Bundle\FormBundle\DependencyInjection\Factory\ConstraintValidatorFactory;
+use Shopware\Components\OrderNumberValidator\OrderNumberValidatorInterface;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
@@ -20,8 +21,8 @@ class ValidatorFactory implements CompilerPassInterface
         $definition->setFactory([ValidatorFactory::class, 'createValidator']);
         $definition->replaceArgument(0, new Reference('models.annotations_reader'));
 
-        if($container->hasDefinition('shopware.components.order_number_validator')) {
-            $container->getDefinition('she_product_number.validator')->setDecoratedService('shopware.components.order_number_validator');
+        if ($container->hasDefinition(OrderNumberValidatorInterface::class)) {
+            $container->getDefinition('she_product_number.validator')->setDecoratedService(OrderNumberValidatorInterface::class);
         }
     }
 

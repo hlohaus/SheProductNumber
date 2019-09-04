@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label>Allow all characters in product numbers</label>
     <label lang="de">Erlaube alle Zeichen in Artikelnummern</label>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <copyright>S.HE Business GmbH</copyright>
     <license>MIT</license>
     <link>https://she-business.com/</link>
@@ -34,6 +34,18 @@
         </changes>
     </changelog>
     <changelog version="1.1.0">
+        <changes>
+            <![CDATA[
+                <div>Add compatibility for shopware 5.6</div>
+            ]]>
+        </changes>
+        <changes lang="de">
+            <![CDATA[
+                <div>Kompatibilität für Shopware 5.6 hinzugefügt</div>
+            ]]>
+        </changes>
+    </changelog>
+    <changelog version="1.1.1">
         <changes>
             <![CDATA[
                 <div>Add compatibility for shopware 5.6</div>
